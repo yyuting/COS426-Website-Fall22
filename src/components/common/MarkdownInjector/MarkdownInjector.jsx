@@ -91,7 +91,7 @@ function MarkdownInjector({ markdown, components = {}, settings = {} }) {
                 <InternalLink to={href}>{children}</InternalLink>
             ),
             'piazza-link': () => (
-                <ExternalLink to={piazzaURL}>{'Piazza'}</ExternalLink>
+                <ExternalLink to={piazzaURL}>{'Ed'}</ExternalLink>
             ),
             // Additional custom components proveded by caller
             ...components,

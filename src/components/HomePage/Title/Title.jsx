@@ -77,7 +77,7 @@ function Title({ semester }) {
                 {'COS 426: Computer Graphics'}
             </Typography>
             <Typography variant='h2' color='inherit' className={classes.term}>
-                {`Spring ${semester}`}
+                {`Fall ${semester}`}
             </Typography>
         </div>
     );
