@@ -1,18 +1,18 @@
 ---
 # Full Name
-name: "Vivien Nguyen"
+name: "Yuanqiao Lin"
 # Role ("Professor", "Graduate TA", or "Undergraduate TA")
 role: "Graduate TA"
 # Filename for headshot
-image: "vivien_nguyen"
+image: "yuanqiao_lin"
 # Email
-email: "vivienn@cs.princeton.edu"
+email: "yuanqiao@princeton.edu"
 # Link associated with headshot button
-featuredURL: "https://viviehn.github.io"
+featuredURL: "https://ece.princeton.edu/people/yuanqiao-lin"
 # Github URL
 githubURL: ""
 # Website URL
-websiteURL: "https://viviehn.github.io"
+websiteURL: "https://ece.princeton.edu/people/yuanqiao-lin"
 # Office Hours
-officeHours: "Sunday 12pm-2pm (in-person)"
+officeHours: "TBD"
 ---

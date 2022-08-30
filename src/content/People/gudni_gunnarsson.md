@@ -1,12 +1,12 @@
 ---
 # Full Name
-name: "Henry Wang"
+name: "Guðni Gunnarsson"
 # Role ("Professor", "Graduate TA", or "Undergraduate TA")
-role: "Undergraduate TA"
+role: "Graduate TA"
 # Filename for headshot
-image: "henry_wang"
+image: "gudni_gunnarsson"
 # Email
-email: "htwang@princeton.edu"
+email: "gudni.nathan@princeton.edu"
 # Link associated with headshot button
 featuredURL: ""
 # Github URL
@@ -14,5 +14,5 @@ githubURL: ""
 # Website URL
 websiteURL: ""
 # Office Hours
-officeHours: "Sunday 8pm-10pm (online)"
+officeHours: "TBD"
 ---

@@ -4,7 +4,7 @@ assignmentName: "Final Project"
 # Assignment Number
 assignmentNumber: -1
 # Are the specs published yet?
-available: true
+available: false
 # Submission url
 submitURL: ""
 # Gallery url
@@ -17,7 +17,7 @@ visible: true
 dueWeek: 13
 dueDay: 'Tuesday'
 dueTime: '11:55pm'
-date: 'Tue, May 3'
+date: 'Tue, Dec 13'
 # Name as displayed on materials page
 calendarName: "Dean's Date: Final Project"
 # Image for assignment
