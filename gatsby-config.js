@@ -5,7 +5,7 @@ const numLecturesPosted = 22; // Increment every time a lecture is posted
 const numPreceptsPosted = 12; // Increment every time a precept is posted
 // Annual Settings
 const semester = 2022; // Increment every year
-const firstDayOfSemester = '09-06'; // Adjust based off of academic calendar
+const firstDayOfSemester = '09-05'; // Adjust based off of academic calendar
 const firstLecture = 'Tuesday'; // Change based off of Registrar scheduling
 const secondLecture = 'Thursday'; // Change based off of Registrar scheduling
 const piazzaURL = 'https://princeton.instructure.com/courses/7766/external_tools/889?display=borderless'; // Piazza Link
