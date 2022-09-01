@@ -5,7 +5,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
 
 function SpecialWeek({ i, className }) {
-    const specialWeeks = { 6: 'Spring Recess', 12: 'Reading Period' };
+    const specialWeeks = { 6: 'Fall Recess', 10: 'Thanksgiving Recess', 12: 'Reading Period' };
 
     if (specialWeeks[i]) {
         return (

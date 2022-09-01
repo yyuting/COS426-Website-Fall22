@@ -112,14 +112,19 @@ export const semesterOffsetToDateString = (weekNumber, dayOfWeek) => {
     // Compute result
     let adjustedWeekNumber = weekNumber;
     if (adjustedWeekNumber > 5) {
-        // Add an extra week for spring break
+        // Add an extra week for fall break
         adjustedWeekNumber += 1;
     }
 
-    if (adjustedWeekNumber > 12) {
-        // Add an extra week for reading period
+    if (adjustedWeekNumber > 10) {
+        // Add an extra week for thanksgiving recess
         adjustedWeekNumber += 1;
     }
+
+    //if (adjustedWeekNumber > 13) {
+        // Add an extra week for reading period
+    //    adjustedWeekNumber += 1;
+    //}
 
     result.setUTCDate(
         result.getUTCDate() + 7 * adjustedWeekNumber + dayToNumber[dayOfWeek]

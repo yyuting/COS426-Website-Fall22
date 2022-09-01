@@ -80,6 +80,11 @@ const materials = {
         {
             title:
                 'Final Project Presentations (Scheduling and Logistics TBD)',
+            due: { week: 13, day: 'Wednesday' },
+        },
+        {
+            title:
+                'Final Project Presentations (Scheduling and Logistics TBD)',
             due: { week: 13, day: 'Thursday' },
         },
     ],
