@@ -87,7 +87,7 @@ function MaterialsTable({ schedule }) {
                                     i === 12 && j === week.length - 1;
                                 if (item.lecture) {
                                     // Generate lecture
-                                    const lectureNumber = lectureCount;
+                                    const lectureNumber = lectureCount + 1;
                                     lectureCount += 1;
                                     return (
                                         <Lecture
@@ -102,7 +102,7 @@ function MaterialsTable({ schedule }) {
                                     );
                                 } else if (item.precept) {
                                     // Generate precept
-                                    const preceptNumber = preceptCount;
+                                    const preceptNumber = preceptCount + 1;
                                     preceptCount += 1;
                                     return (
                                         <Precept

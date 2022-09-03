@@ -36,7 +36,7 @@ function Lecture({
         <TableRow className={className}>
             <TableCell className={nowrap}>{date}</TableCell>
             <TableCell>
-                {lectureNumber < numLecturesPosted ? (
+                {lectureNumber <= numLecturesPosted ? (
                     <ExternalLink
                         to={withPrefix(`lectures/Lecture-${lectureNumber}.pdf`)}
                     >
