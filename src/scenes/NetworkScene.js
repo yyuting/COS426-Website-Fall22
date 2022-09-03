@@ -1,4 +1,4 @@
-import SceneBase from './sceneBase';
+import SceneBase from './SceneBase';
 import { randFloat, randInt, mobileCheck, clamp } from 'utils';
 import {
     PerspectiveCamera,
