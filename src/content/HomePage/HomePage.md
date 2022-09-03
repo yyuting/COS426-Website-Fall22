@@ -12,7 +12,7 @@ Lectures are held on Tuesdays and Thursdays from 3:00 – 4:20 PM in Friend 101.
 
 Precept is held on Thursday from 7:30 – 8:20 PM and Friday from 10:00 – 10:50 AM and 11:00 – 11:50 AM. Students are encouraged to attend their own precept, but may attend another precept during the week in case of a one-time conflict. ***Precept attendance is highly encouraged.***
 
-**Please note:** Precepts will **not** be held during the week of Thanksgiving.  However, the regular Friday precepts **will* be held on December 9.
+**Please note:** Precepts will **not** be held during the week of Thanksgiving.  However, the regular Friday precepts **will** be held on December 9.
 
 ### Required Reading
 
