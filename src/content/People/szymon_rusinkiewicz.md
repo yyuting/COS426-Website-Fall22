@@ -14,5 +14,5 @@ githubURL: ""
 # Website URL
 websiteURL: "https://www.cs.princeton.edu/~smr/"
 # Office Hours
-officeHours: "TBD"
+officeHours: "TTh after class, or calendly.com/smr-princeton"
 ---
