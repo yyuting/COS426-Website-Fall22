@@ -14,5 +14,5 @@ githubURL: ""
 # Website URL
 websiteURL: "https://ece.princeton.edu/people/yuanqiao-lin"
 # Office Hours
-officeHours: "Fri 3:30 pm - 5:30 pm"
+officeHours: "Fri 3:30 pm - 5:30 pm at CS 003"
 ---
