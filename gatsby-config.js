@@ -1,7 +1,7 @@
 const plugins = require('./gatsby-plugins.js');
 
 // Weekly Settings
-const numLecturesPosted = 3; // Increment every time a lecture is posted
+const numLecturesPosted = 4; // Increment every time a lecture is posted
 const numPreceptsPosted = 2; // Increment every time a precept is posted
 // Annual Settings
 const semester = 2022; // Increment every year
