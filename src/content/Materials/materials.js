@@ -72,20 +72,28 @@ const materials = {
         {
             title: 'Exam',
             due: { week: 6, day: 'Thursday' },
+            readings: [
+                {selection: 'Old exams:', link: 'Exam1-2017'},
+                {link: 'Exam1-2012'},
+                {link: 'Exam1-2011'}
+            ],
         },
         {
             title: 'Project Proposals',
             due: { week: 12, day: 'Thursday' },
+            readings: [],
         },
         {
             title:
                 'Final Project Presentations (Scheduling and Logistics TBD)',
             due: { week: 13, day: 'Wednesday' },
+            readings: [],
         },
         {
             title:
                 'Final Project Presentations (Scheduling and Logistics TBD)',
             due: { week: 13, day: 'Thursday' },
+            readings: [],
         },
     ],
 };
