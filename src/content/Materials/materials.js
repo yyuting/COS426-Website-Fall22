@@ -1,29 +1,41 @@
 const materials = {
     lectures: [
+         // Week 1
         'Introduction & Color',
-        'Digital Image Processing', // Week 1
-        'Sampling, Resampling & Warping',
-        'Compositing & Morphing', // Week 2
+        'Digital Image Processing',
+         // Week 2
+         'Sampling, Resampling & Warping',
+        'Compositing & Morphing',
+        // Week 3
         '3D Modeling',
-        'Polygonal Meshes', // Week 3
+        'Polygonal Meshes',
+        // Week 4
         'Parametric Curves & Surfaces',
-        'Subdivision Surfaces', // Week 4
+        'Subdivision Surfaces',
+        // Week 5
         'Implicit Surfaces & Solid Models',
-        'Scenes & Transformations', // Week 5
+        'Scenes & Transformations',
+        // Week 6
         'More On Transformations',
-        '', // Week 6
+        '',
+        // Week 7
         'Rendering & Raycasting',
-        'Lighting & Reflectance', // Week 7
+        'Lighting & Reflectance',
+        // Week 8
         'Global Illumination',
-        'Reverse Classroom, Ray Tracing', // Week 8
-        '3D Rasterization Pipeline',
-        'Scan Conversion', // Week 9
         'Non-photorealistic Rendering',
-        'Passive Dynamics & Particle Systems', // Week 10
+        // Week 9
+        '3D Rasterization Pipeline',
+        'Scan Conversion',
+        // Week 10
+        'Passive Dynamics & Particle Systems',
         'Character Animation',
-        'Neural Rendering', // Week 11
+        // Week 11
+        '3D Fabrication',
+        'Neural Rendering',
+        // Week 12
         'Final Project Logistics and Q&A in Class',
-        '', // Week 12
+        '',
     ],
     precepts: [
         'Learning Javascript', // Week 1
