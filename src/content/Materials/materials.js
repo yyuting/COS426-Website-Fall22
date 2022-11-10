@@ -26,7 +26,7 @@ const materials = {
         'Non-photorealistic Rendering',
         // Week 9
         '3D Rasterization Pipeline',
-        'Scan Conversion',
+        'Rasterization: Shading and Visibility',
         // Week 10
         'Passive Dynamics & Particle Systems',
         'Character Animation',
