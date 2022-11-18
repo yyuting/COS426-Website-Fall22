@@ -26,9 +26,9 @@ imageName: "final_project"
 description: "Work in small groups to build a large graphics-based project for the web."
 ---
 # Overview
-In this final phase of the course, you have great freedom to craft a project that excites you and that you can be proud of, perhaps even as a reference in industry interviews. Over the past twelve weeks, you have acquired hands-on experience with image processing, mesh processing, raytracing, rasterization, and cloth simulation. Additionally, you have learned through course lectures and readings about many fundamental tools and techniques used in the computer graphics field to engineer solutions for a breadth of complex visual applications. Now, as a capstone to this course, you will synthesize your graphics knowledge and extend your hands-on experience by working in small groups to build a large graphics-based project for the web.
+In this final phase of the course, you have great freedom to craft a project that excites you and that you can be proud of, perhaps even as a reference in industry interviews. Over the past twelve weeks, you have acquired hands-on experience with image processing, mesh processing, raytracing, rasterization, and cloth simulation. Additionally, you have learned through course lectures and readings about many fundamental tools and techniques used in the computer graphics field to engineer solutions for a breadth of complex visual applications. Now, as a capstone to this course, you will synthesize your graphics knowledge and extend your hands-on experience by working in small groups to build a large graphics-based 3D video game for the web.
 
-For the final project, you will work in teams of two to four to build an extensive system that incorporates one or more ideas from this course. As long as the foundation of your project is graphics-based, its precise focus can really be anything of your choosing. Over the past few years, almost all students used ThreeJS to create mini games, interactive art demos, or occasionally technical extensions; however, this should not discourage you from trying something different! Note that the most successful projects are often slightly-innovative and highly-polished games or art demos.
+For the final project, you will work in teams of two to four to build an extensive system that incorporates one or more ideas from this course.  You are free to design and implement any sort of game you like, as long as it incorporates the required functionality described below. For purposes of this project, we consider a 3D video game to be an interactive 3D computer graphics application that has a challenging goal, is fun to play, and incorporates some concept of scoring or winning and losing. It is not required that your game idea be original, but originality will be rewarded with extra credit.
 
 At the end of this project, you will have the culmination of your hard work available online as a live demo for anyone to try out! Because graphics projects are generally entertaining and visually impressive, students often choose to share their finished projects with friends, family, and even recruiters. Regardless of what you do with your project after this semester, we hope that you find this final project to be a rewarding experience!
 
@@ -42,6 +42,50 @@ As outlined above, this project is fairly open-ended, but there are a few hard r
 * **You must give an elevator pitch during the in-class proposal lecture, and you must present during the final project presentation session.** If extenuating circumstances renders your presence impossible for either of these presentations, please make a private post on <piazza-link></piazza-link> explaining your situation, and we will do our best to find a solution.
 
 Finally, we will be holding an art contest for the final project, and as usual, the contest winners will be awarded a small amount of extra credit. The top projects from this semester will also be honored with an induction into the [Final Project Hall of Fame](/links#final-project-hall-of-fame).
+
+### Required Functionality
+
+Within the overall framework of your video game, you are required to include the following functionality:
+
+* **3D perspective viewing and objects.** Your game environment must be a scene consisting primarily of 3D elements, as opposed to only "flat," 2D sprite-based graphics. Your game should provide perspective views of your 3D scene where at least sometimes the viewpoint changes smoothly under some combination of user and program control.
+
+* **Lighting and smooth shading.** Your game must contain at least some objects that are "lit" using some lighting model. For these objects, you'll need to define normal vectors and materials, as well as create one or more light sources.
+
+* **User input.** Your game must allow players to interact with the game via keyboard or mouse controls.
+
+* **Computer control over some elements of the scene.** This may include a physics-based dynamical simulation or particle system, some variant of "monster AI" to control computer characters, or simply some elements in the scene that respond to the user's actions.
+
+**In addition to the basic requirements, you are required to implement at least 2N of the advanced features listed below,** where N is the size of your team. Of course, you are encouraged to implement as many of these techniques as you can, depending on the requirements of your particular game engine, as well as using any other ideas you read about or invent on your own. Extra effort will be rewarded with extra credit.
+
+* **Texture mapping.** Implement texture mapping for at least one of the 3D objects in your video game. This will require you to load the texture images, figure out some way of computing or specifying texture coordinates, and enabling texturing.
+
+* **Multiple views.** Implement a second view of the game world, in addition to the "main" view. For example, if the main view is first-person, implement a global overview or an over-the-shoulder view, to be displayed on the screen at the same time as the same view.
+
+* **On-screen control panel.** Many 3D video games reserve part of the display area for an on-screen control panel, which may include text or 2D graphical elements for user controls, scoreboards, etc. Flight simulator games often use 2D graphical overlays on the 3D world for "Heads Up Displays (HUDs)."
+
+* **View frustum culling.** In video games with complex 3D environments, it is necessary to limit the number of 3D primitives drawn each frame in order to maintain interactive rendering rates. One way to do this is to avoid drawing any 3D objects which are outside of the viewing frustum of the camera. You can pre-compute rough bounding volumes for hierarchical objects or parts of your 3D world, and then test each bounding volume to verify that some part of it intersects the view frustum before drawing its contained objects each frame.
+
+* **Level of detail control.** Another way to limit the number of 3D primitives drawn each frame is to implement level of detail (LOD) control in your game. One simple method of LOD control involves creating multiple versions of some of your 3D objects, varying in geometric complexity (such as 100, 1000, and 10000 polygons). Then, before drawing the objects each frame, you can pick the most appropriate version of the object to render, depending on such metrics as the distance of the object from the viewer, the complexity of the current scene, or a user-selectable detail level.
+
+* **Occlusion culling.** Yet another way to maintain good game performance with complex environments is by performing occlusion culling. Similar to view frustum culling, this technique involves using a conservative computation to avoid drawing any parts of the 3D scene which won't be seen by the viewer because they are hidden behind other objects. For static environments such as buildings, you might pre-compute which regions of space (such as rooms) are impossible to see from other regions (due to occluding walls, for example).
+
+* **Procedural and physically-based modeling.** In addition to using scanned or hand-modeled objects to populate the 3D worlds, some video games use procedurally computed models, such as fractally-generated mountainous terrains, L-grammars for generating models of plants, or particle systems for fire, smoke, and clouds.
+
+* **Collision detection.** Video games often contain moving objects which trigger events when they collide, such as projectiles shot at a target. Collision detection can also be used to prevent the user from passing through walls or other objects. You can implement collision detection in a variety of ways; the simplest might involve comparing bounding volumes of objects to decide if they intersect or not.
+
+* **Simulated dynamics.** Your video game implementation might include modeling dynamic behaviors and physics for objects in the 3D world. For example, the wheels of a vehicle might react realistically as they move over rough terrain, or a door might swing open differently depending on the force exerted by the player.
+
+* **Skinned characters.** Implement linear-blend skinning for some characters in your scene. You will need to augment the file formats to include information about blending parameters.
+
+* **Vertex or fragment shaders.** Use GLSL to implement custom shaders to be evaluated at vertices or fragments (pixels). These might implement procedural shading or geometry effects, or be used to implement more advanced rendering techniques.
+
+* **Advanced image-based techniques.** In an effort to increase graphical realism and maintain fast performance, many video games mix traditional 3D graphics rendering with 2D image-based graphics. Although 2D texture mapping is an example of a basic image-based technique, more advanced techniques such as environment mapping, billboarding, and projective textures are possible. Other ideas for image-based techniques include precomputing multiple 2D images ("sprites") of a object from different orientations, and then choosing the most appropriate sprite to warp and render in the 3D scene.
+
+* **Sound.** Adding appropriate audio effects to your game can provide a more compelling experience for the player.
+
+* **Networked multi-player capability.** Networked multi-player video games allow more than one player to play at once, either collaboratively or in competition. If you add multi-player capability to your video game, you'll need to deal with issues such as network latency by using predictive techniques.
+
+* **Game level editor.** Some video games are accompanied with supplementary computer graphics applications which allow users to design their own game levels (scenes). If you develop your own custom application to construct levels while writing your game, you might consider packaging it as a separate utility program for end-users to enjoy as well!
 
 ### Policy on Sources
 Whereas you were asked to build programs from scratch for assignments in this course, we encourage you to leverage existing resources available through online communities in your final project. While we will provide some simple ThreeJS starter code for this project (since many students will be using ThreeJS), you might find that your project needs a little more help getting off the ground. At the very least, you are welcome to source infrastructure, tools, and even bits of code from the extensive list of [ThreeJS examples](https://threejs.org/examples/). Sometimes, students even choose to start with a ThreeJS example and build from, with great success.
@@ -182,6 +226,16 @@ Worker to take physics off the main thread (since they can be resource intensive
 
 * Familiarize yourself with the many geometries, materials, and
 shaders that ThreeJS provides! An engineer should know their toolset like the back of their hand.
+
+* In the course of designing and implementing your video game, keep in mind that COS 426 is a computer graphics course. Focus your efforts on the computer graphics techniques underlying the game; don't spend the majority of your time on game design or object modeling if the graphics engine will suffer as a result!
+
+* Most successful video games include richly detailed 3D models, textures, sounds, and other content for representing the game world and characters. You have several options available in creating the 3D models for your video game:
+    * Simple models can be sketched on graph paper, and the coordinates hard-coded.
+    * Models can be procedurally generated, as mentioned above.
+    * You can use a 3D modeling package such as Blender and export the model in .gltf format.
+    * The Three.js library provides functions for drawing a few simple 3D shapes (sphere, cube, etc.)
+    * You can find a wide variety of 3D models available on the Web. These may need to be converted to a format your program can use.
+* This project is purposefully designed to be more open-ended than the first four assignments of the course. You will be expected to do a considerable amount of learning on your own, particularly in gaining experience with programming
 
 ### Resources
 We know that this project really throws you into the deep end, but trust us --- it will be worth it. While we have already provided a number of links in the sections above to help you navigate the final project, here is a condensed list of resource links that you might find helpful:
