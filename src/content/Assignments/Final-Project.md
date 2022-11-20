@@ -4,7 +4,7 @@ assignmentName: "Final Project"
 # Assignment Number
 assignmentNumber: -1
 # Are the specs published yet?
-available: false
+available: true
 # Submission url
 submitURL: ""
 # Gallery url
@@ -23,7 +23,7 @@ calendarName: "Dean's Date: Final Project"
 # Image for assignment
 imageName: "final_project"
 # Brief description of assignment
-description: "Work in small groups to build a large graphics-based project for the web."
+description: "Work in small groups to build a web-based video game."
 ---
 # Overview
 In this final phase of the course, you have great freedom to craft a project that excites you and that you can be proud of, perhaps even as a reference in industry interviews. Over the past twelve weeks, you have acquired hands-on experience with image processing, mesh processing, raytracing, rasterization, and cloth simulation. Additionally, you have learned through course lectures and readings about many fundamental tools and techniques used in the computer graphics field to engineer solutions for a breadth of complex visual applications. Now, as a capstone to this course, you will synthesize your graphics knowledge and extend your hands-on experience by working in small groups to build a large graphics-based 3D video game for the web.
