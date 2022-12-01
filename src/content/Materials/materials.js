@@ -32,9 +32,9 @@ const materials = {
         'Character Animation',
         // Week 11
         '3D Fabrication',
-        'Neural Rendering',
-        // Week 12
         'Final Project Logistics and Q&A in Class',
+        // Week 12
+        'Neural Rendering',
         '',
     ],
     precepts: [
